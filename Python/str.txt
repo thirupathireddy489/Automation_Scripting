@@ -133,3 +133,33 @@ numbers = [1, 2, 3, 4]
 numbers_str = [str(num) for num in numbers]
 result = "-".join(numbers_str)
 print(result)  # Output: "1-2-3-4"
+
+
+##################################################
+###########################################
+
+
+# join - used to join multiple objects into ONE
+# we can join using any characters
+data = ["india", "uk", "germany", "japan", "100"]
+out = "-".join(data)
+print(out)
+# 
+# "JOIN_CHARS".join(MULTIPLE_ITEMS)
+
+
+# join - used to join multiple objects into ONE
+# we can join using any characters
+data = ["india", "uk", "germany", "japan", "100"]
+out = "\n".join(data)
+print(out)
+
+"""
+india
+uk
+germany
+japan
+100
+
+india\nuk\ngermany\njapan\n100
+"""
