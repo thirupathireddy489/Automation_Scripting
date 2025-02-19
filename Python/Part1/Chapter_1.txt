@@ -1,0 +1,133 @@
+###########################################
+### IMPORTANT NOTE
+### Write programs to work properly
+### Negative test cases also must be handled
+### for each and every program
+###########################################
+
+Chapter 1:
+
+1. Concatenation of strings
+fname = "rahul"
+lname = "dravid"
+# output:: Rahul Dravid
+
+2. How to find the type of a variable?
+i = 10.4 # float
+x = 100 # int
+y = [1,2,3] # list
+Find & print the type of these variables
+
+3. Swap string variable values
+fname = "rahul"
+lname = "dravid"
+Swap the value of variable with fname & fname with lname
+Output:: print(fname) # dravid
+		 print(lname) # rahul
+##fname,lname = lname,fname
+
+4. Write a program to swap first & last element of any list provided
+inp = [10,2,3,44,4]
+output: print(inp) # [4,2,3,44,10]	
+	
+5. Find length of below list
+inp = [10,2,3,4]
+
+6. Find length & type of 2nd element in a list
+inp1 = [10,2,30012,4] # expecting len - 5
+inp2 = ["Rahul", "Ajay", 'xyz', 4]
+	
+7. Remove last 2 elements from the list
+inp = [10,2,3,4]
+inp.pop()
+inp.pop()
+
+8. Update list as suggested below
+inp = ['Ramesh', 'Bangalore', 10, 'Vijay', 'Kiran', 'Ramesh']
+	a. Remove Bangalore from the list
+	b. Get count of Ramesh # 2
+	c. Print highest index of list -> len(inp)-1
+	d. Change Vijay to Ajay
+	e. Add 'Rahul' at the end
+	
+9. Take below as input dictionary
+sample = {
+	'user1' : 'yogi',
+	'user2' : 'booboo',
+	'user3' : 'rupert',
+	'user4' : 'teddy',
+	'user5' : 'care',
+	'user6' : 'winnie',
+	'user7' : 'sooty',
+	'user8' : 'padders',
+	'user9' : 'polar',
+	'user10' : 'grizzly',
+	'user11' : 'baloo',
+	'user12' : 'bungle',
+	'user13' : 'fozzie',
+	'user14' : 'huggy',
+	'user15' : 'barnaby',
+	'user16' : 'hair',
+	'user17' : 'greppy'
+}
+Perform basic operations like::
+	(a) user15 no longer has a machine assigned
+	(b) The name of user16's machine is changed to 'Ursa'
+	(c) user17 is leaving the company, and a new user, user18, will be assigned his machine
+	(d) user5, user6, and user7 are all leaving at exactly the same time, but their machine names are to be stored in a list called machines.
+	(e) Print a list of each (hint) user, with their machine, in any order. Do not print users that have no machine defined for them (like user15, for example) -> Try this after 2nd chapter.
+	    Nt: Try after learning loops
+
+10. Perform below operations on string
+		# search and replace
+	a. 	inp = "c/home/test/abc.py"
+		update this to : c:\home\test\abc.py
+	b. 	inp = "google.com"
+		remove '.com' from above string
+		output : print(inp) # google
+	c.	inp = "google.com"
+		find the position of '.' in above string
+		
+11. Creating below mapping data in dictionary
+	name - ajay
+	rn   - 10
+	pan  - chxp34545s1
+	
+	Get a keyboard input & display data which is mapped to input
+	ex: if keyboard input is name then display ajay
+
+ex:
+if keyboard input value is "name" then display ajay
+if keyboard input value is "rn" then display 10
+but if key does not exist, display "DATA NOT AVAILABLE"
+
+12. Try a string operation to perform below operation
+exam_st_date = (11, 12, 2014)
+Sample Output : The examination will start from : 11 / 12 / 2014
+
+13. Write a statement to find the length of a number?
+x = 1234342
+# print the length
+
+16. Write a program to remove last object from a tuple
+x = (11,22,33,44)
+# Expected => x = (11,22,33)
+
+18. Write a program to convert values of a dictionary to tuple
+data = {11:22,33:44,55:66}
+# Expected out = (22,44,66)
+
+
+20. Write the difference between 
+	- pop and remove
+	- get and setdefault
+	
+21. Write a program to insert a key 10 value 20 into below dictionary
+x = {11:22,33:44}
+# Expected output: x = {11:22,33:44,10:20}
+
+22. Write a program to convert string characters to list
+x = "100ab"
+# Expected output: x = ['1', '0', '0', 'a', 'b']
+
+
