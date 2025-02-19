@@ -1,0 +1,135 @@
+str: str is a collection of characters in '' or "" or """""" 
+    eg:
+    single_quoted = 'Hello'      
+    double_quoted = "World"
+    milti_line = """This is a 
+                 multi line
+                 string    
+                 """
+
+    string operations:
+        concatination +
+            str1 = 'Hello'
+            str2 = 'World'
+            str_concatination = str1 + str2 # HelloWorld
+        repetition *
+            str_repetition = str1 * 3 # HelloHelloHello
+        slicing [start_pos:end_pos]
+            name = 'Bangalore'
+            str_slicing = name[1:5] # anga
+
+    methods:
+	    upper, lower, count, index, replace
+		strip, lstrip, rstrip
+		isdigit, startswith, endswith
+		split, join
+
+		upper: converts lower case chars to upper care chars
+		lower: converts upper case chars to lower care chars
+		eg: data = 'Hello World'
+		    out = data.upper()
+
+        strip: method to remove whitespaces from begining and ending
+        lstrip: method to remove whitespaces from begining (left side)
+        rstrip: method to remove whitespaces from begining (right side)
+
+        isdigit: used for checking str is a valid digit or number
+		    if string contains only didgit 0-9 then is digit is true
+			outout will be always boolean - True/False
+
+		replace: used for replace specified substring with a new substring
+		    it returns new string with the replacements made
+			it will not modify the original string as it is a immutable data type
+			syntax: str.replace(old_str, new_str, count) # count is optional
+			count is optional: The maximum number of occurrences to replace. If not provided, all occurrences of old will be replaced.
+
+			eg:
+			data = "Hello World Hello"
+			out = data.replace('Hello', 'Hey') # 'Hey World Hey'
+
+			out = data.replace('Hello', 'Hey', 1) # 'Hey World Hello'
+
+			out = data.replace('Python', 'Hey', 1) # 'Hello World Hello' #if does not exists in the str, no replcements will made
+
+		split: divide a string into a list of substrings based on a specified separator
+		    used for break the string
+            split output is always list
+            syntax: str.split(separator, maxsplit)
+			maxsplit is a optional and is used for split till specific number
+
+            eg:
+            data = 'Ban:Hyd:Chen'
+            res = data.split(':')
+
+			text = "Python is an easy to learn programming language"
+            result = text.split()
+            print(result)  # Output: ['Python', 'is', 'an', 'easy', 'to', 'learn', 'programming', 'language']
+
+			data = "apple,banana,cherry"
+            result = data.split(",")
+            print(result)  # Output: ['apple', 'banana', 'cherry']
+
+			#using maxsplit
+			text = "one two three four five"
+            result = text.split(" ", 2)
+            print(result)  # Output: ['one', 'two', 'three four five']
+
+			text = "a,,b,,c"
+            result = text.split(",")
+            print(result)  # Output: ['a', '', 'b', '', 'c']
+
+			text = "hello world  "
+            result = text.split()
+            print(result)  # Output: ['hello', 'world']
+
+			#Splitting a String with No Separators Found
+			text = "singleword"
+            result = text.split(",")
+            print(result)  # Output: ['singleword']
+
+		join:
+			concatenate the elements of an iterable (such as a list or tuple) into a single string, with a specified separator string in between each element
+			merge the iterables, with a specified separator string in between each element
+
+			syntax:
+			separator.join(iterable)
+
+# List of strings
+words = ["Hello", "world", "this", "is", "Python"]
+
+# Join the words with a space as the separator
+sentence = " ".join(words)
+print(sentence)  # Output: "Hello world this is Python"
+
+# Join the words with a hyphen as the separator
+hyphenated = "-".join(words)
+print(hyphenated)  # Output: "Hello-world-this-is-Python"
+
+
+
+# Using a comma as the separator
+items = ["apple", "banana", "cherry"]
+comma_separated = ", ".join(items)
+print(comma_separated)  # Output: "apple, banana, cherry"
+
+# Using an empty string as the separator (concatenation without spaces)
+letters = ["P", "y", "t", "h", "o", "n"]
+concatenated = "".join(letters)
+print(concatenated)  # Output: "Python"
+
+
+
+# An empty list
+empty_list = []
+result = ", ".join(empty_list)
+print(result)  # Output: "" (an empty string)
+
+
+
+# List with non-string elements
+numbers = [1, 2, 3, 4]
+
+# Convert each number to a string and then join
+numbers_str = [str(num) for num in numbers]
+result = "-".join(numbers_str)
+print(result)  # Output: "1-2-3-4"
