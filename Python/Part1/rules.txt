@@ -1,0 +1,183 @@
+#RULES
+
+mutable:
+	we can update the value or we can change the value or we can modify the object
+	
+	list
+	dict
+	set
+	
+	eg:
+	# Creating a list
+    my_list = [1, 2, 3] 
+    # Modifying the list
+    my_list[0] = 10  # Changing the first element   
+    print(my_list)  # Output: [10, 2, 3]
+	
+	
+immutable:
+	cannot be changed after they are created 
+	can not be modified
+	
+	int
+	float
+	str
+	tuple
+	bool
+	
+	# Creating a string
+    my_string = "Hello" 
+    # Trying to modify the string
+    # my_string[0] = "J"  # This will raise a TypeError    
+    # Creating a new string instead
+    new_string = "J" + my_string[1:]   
+    print(new_string)  # Output: Jello
+	
+	
+Indexable:
+	Indexable objects allow you to access their elements using indices.
+	These objects implement the __getitem__ method, which enables you to use the square bracket notation to retrieve individual elements.
+	
+	str
+	list
+	tuple
+	dict (keys act as indices)
+	range
+	
+	# String
+    my_string = "Hello"
+    print(my_string[1])  # Output: 'e'
+    
+    # List
+    my_list = [10, 20, 30]
+    print(my_list[2])  # Output: 30
+    
+    # Tuple
+    my_tuple = (1, 2, 3)
+    print(my_tuple[0])  # Output: 1
+    
+    # Dictionary
+    my_dict = {'a': 1, 'b': 2, 'c': 3}
+    print(my_dict['b'])  # Output: 2
+    
+    # Range
+    my_range = range(5)
+    print(my_range[3])  # Output: 3
+	
+	
+Non indexable:
+	Not indexable objects do not support accessing their elements using indices
+	
+	set
+	int
+	float
+	
+	# Set
+    my_set = {1, 2, 3}
+    # print(my_set[0])  # This will raise a TypeError
+    
+    # Integer
+    my_int = 100
+    # print(my_int[0])  # This will raise a TypeError
+    
+    # Float
+    my_float = 10.5
+    # print(my_float[1])  # This will raise a TypeError
+
+
+Iterables:
+	allowing it to be looped over in a for loop
+	
+	str
+	list
+	tuple
+	dict
+	set
+	range
+	
+# String
+my_string = "Hello"
+for char in my_string:
+    print(char)
+# Output:
+# H
+# e
+# l
+# l
+# o
+
+# List
+my_list = [1, 2, 3]
+for item in my_list:
+    print(item)
+# Output:
+# 1
+# 2
+# 3
+
+# Tuple
+my_tuple = (4, 5, 6)
+for item in my_tuple:
+    print(item)
+# Output:
+# 4
+# 5
+# 6
+
+# Dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+for key in my_dict:
+    print(key, my_dict[key])
+# Output:
+# a 1
+# b 2
+# c 3
+
+# Set
+my_set = {7, 8, 9}
+for item in my_set:
+    print(item)
+# Output:
+# 7
+# 8
+# 9
+
+# Range
+my_range = range(3)
+for number in my_range:
+    print(number)
+# Output:
+# 0
+# 1
+# 2
+
+
+Not Iterables:
+	These cannot be used in a for loop
+	
+	int
+	float
+	bool
+	NoneType
+	
+# Integer
+my_int = 10
+# for item in my_int:  # This will raise a TypeError
+#     print(item)
+
+# Float
+my_float = 10.5
+# for item in my_float:  # This will raise a TypeError
+#     print(item)
+
+# Boolean
+my_bool = True
+# for item in my_bool:  # This will raise a TypeError
+#     print(item)
+
+# NoneType
+my_none = None
+# for item in my_none:  # This will raise a TypeError
+#     print(item)
+
+
